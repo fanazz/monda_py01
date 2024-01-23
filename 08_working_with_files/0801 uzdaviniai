@@ -1,0 +1,10 @@
+with open("pakeitimai.txt", "r") as failas:
+    eilute = failas.readline()
+    nauja_eilute = eilute.swapcase()
+    print(nauja_eilute)
+
+
+
+with open("skaiciai.txt", "w") as failas:
+    for skaicius in range(1, 101):
+        failas.write(f"{skaicius}\n")
